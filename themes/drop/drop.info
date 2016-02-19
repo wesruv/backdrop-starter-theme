@@ -1,0 +1,20 @@
+name = Drop
+description = The default front-end theme for Backdrop CMS.
+version = 0.1
+type = theme
+backdrop = 1.x
+
+stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/fonts.css
+stylesheets[all][] = css/skin.css
+; stylesheets[all][] = css/colors.css
+; stylesheets[print][] = css/print.css
+
+; Remove system.theme.css
+stylesheets[all][] = system.theme.css
+
+; We need at least one setting for the theme settings page to appear in the
+; menu. Color module provides our defaults, so we just register a dummy setting.
+settings[color] = true
+settings[main_menu_tabs] = no-tabs
