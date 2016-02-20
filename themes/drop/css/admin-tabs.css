@@ -58,7 +58,7 @@ ul.primary li.active a,
   line-height: 1;
   color: #757575;
   font-weight: normal;
-  background-color: #DBDBD9;
+  background-color: #dee2ea;
   transition:
     background-color 0.5s ease 0s,
     color 0.5s ease 0s;
@@ -70,7 +70,7 @@ ul.primary li.active a:active,
 ul.primary li.active a:visited,
 .responsive-tabs-mobile .expand-dropdown-tabs-label {
   color: #000;
-  background-color: #fafafa;
+  background-color: #fff;
   font-weight: bold;
 }
 ul.primary li a:hover,
@@ -112,7 +112,7 @@ ul.secondary {
   margin: 0 -20px 0;
   line-height: 1.385em;
   overflow: hidden;
-  background-color: #fafafa;
+  background-color: #fff;
   clear: both;
   border: none;
 }
@@ -152,7 +152,7 @@ ul.secondary li.active a.active {
   overflow: hidden;
 }
 .responsive-tabs-mobile ul.primary {
-  background: #fafafa;
+  background: #fff;
 }
 .responsive-tabs-processed ul.primary li {
   margin-bottom: 0;
@@ -178,7 +178,7 @@ ul.secondary li.active a.active {
 }
 .expand-dropdown-tabs ul.responsive-tabs-dropdown li a,
 .expand-dropdown-tabs ul.responsive-tabs-dropdown li a:hover {
-  border-top: 2px solid #fafafa;
+  border-top: 2px solid #fff;
   position: relative;
 }
 .expand-dropdown-tabs ul.responsive-tabs-dropdown li:first-child a:before {
@@ -298,7 +298,7 @@ ul.primary.responsive-tabs-dropdown li:last-child a {
   border-radius: 4px 4px 0 0;
 }
 .responsive-tabs-mobile .expand-dropdown-tabs-control.js-active {
-  background: #fafafa;
+  background: #fff;
   overflow: visible;
 }
 
@@ -311,10 +311,10 @@ ul.primary.responsive-tabs-dropdown li:last-child a {
   height: 100%;
   box-sizing: border-box;
   border-left: 2px solid transparent;
-  background: #dbdbd9;
+  background: #dee2ea;
 }
 .responsive-tabs-mobile.expand-dropdown-tabs .expand-dropdown-tabs-control:before {
-  background: #fafafa;
+  background: #fff;
 }
 .responsive-tabs-mobile .expand-dropdown-tabs-control:after {
   content: '';
@@ -340,7 +340,7 @@ ul.primary.responsive-tabs-dropdown li:last-child a {
   width: 100%;
   margin: 0;
   top: 2.6em;
-  background: #fafafa;
+  background: #fff;
 }
 .responsive-tabs-mobile ul.primary,
 .expand-dropdown-tabs.responsive-tabs-mobile ul.primary {
@@ -352,7 +352,7 @@ ul.primary.responsive-tabs-dropdown li:last-child a {
   position: relative;
   float: none;
   border-right: 0;
-  border-bottom: 2px solid #fafafa;
+  border-bottom: 2px solid #fff;
 }
 .responsive-tabs-mobile ul.primary a:after {
   content: '';

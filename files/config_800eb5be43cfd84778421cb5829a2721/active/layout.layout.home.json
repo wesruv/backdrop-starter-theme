@@ -20,7 +20,9 @@
             "dc4dcc36-a796-4e71-8407-7b66ec1a5c23",
             "3cf4d100-0d5a-4c0a-af00-e5f6121ccfc2"
         ],
-        "top": [],
+        "top": [
+            "1dbe2d99-b8ff-4cb0-ab03-3f22346cced9"
+        ],
         "content": [
             "139a22e2-9fc0-46f2-af00-bbfba6664f12"
         ],
@@ -103,6 +105,31 @@
                             "title_classes": "element-invisible",
                             "content_tag": "div",
                             "content_classes": ""
+                        }
+                    }
+                }
+            }
+        },
+        "1dbe2d99-b8ff-4cb0-ab03-3f22346cced9": {
+            "plugin": "layout:custom_block",
+            "data": {
+                "module": "layout",
+                "delta": "custom_block",
+                "settings": {
+                    "title_display": "default",
+                    "title": "",
+                    "style": "default",
+                    "block_settings": [],
+                    "contexts": [],
+                    "content": "<header class=\"hero homepage-hero\">\n  <div class=\"hero-content\">\n    <h1 class=\"hero-title\">Get Started Checklist</h1>\n    <ul class=\"hero-checklist\">\n      <li class=\"hero-check-wrapper\">\n        <input type=\"checkbox\" class=\"hero-checkbox\" value=\"site-colors\" id=\"hero-checkbox-site-colors\"/>\n        <label class=\"hero-checkbox-label\" for=\"hero-checkbox-site-colors\">Configure site colors</label>\n      </li>\n      <li class=\"hero-check-wrapper\">\n        <input type=\"checkbox\" class=\"hero-checkbox\" value=\"site-branding\" id=\"hero-checkbox-site-branding\"/>\n        <label class=\"hero-checkbox-label\" for=\"hero-checkbox-site-branding\">Add site branding</label>\n      </li>\n      <li class=\"hero-check-wrapper\">\n        <input type=\"checkbox\" class=\"hero-checkbox\" value=\"add-content\" id=\"hero-checkbox-add-content\" checked />\n        <label class=\"hero-checkbox-label\" for=\"hero-checkbox-add-content\">Add content</label>\n      </li>\n    </ul>\n    <a href=\"#getting-started\" class=\"hero-call-to-action button button-primary\">\n      See more\n    </a>\n  </div>\n</header>\n<section class=\"cards-wrapper\">\n  <div class=\"cards-inner-wrapper\">\n    <article class=\"card\">\n      <div class=\"card-content\">\n        <h3 class=\"card-title\">\n          <a href=\"#\" class=\"card-title-link\">Articles</a>\n        </h3>\n        <p class=\"card-description\">\n          Content title lorem ipsum dolor sit amet marble\n        </p>\n      </div>\n    </article>\n    <article class=\"card\">\n      <div class=\"card-content\">\n        <h3 class=\"card-title\">\n          <a href=\"#\" class=\"card-title-link\">About</a>\n        </h3>\n        <p class=\"card-description\">\n          Content title lorem ipsum dolor sit amet marble\n        </p>\n      </div>\n    </article>\n    <article class=\"card\">\n      <div class=\"card-content\">\n        <h3 class=\"card-title\">\n          <a href=\"#\" class=\"card-title-link\">\n            Contact\n          </a>\n        </h3>\n        <p class=\"card-description\">\n          Content title lorem ipsum dolor sit amet marble\n        </p>\n      </div>\n    </article>\n  </div>\n</section>\n",
+                    "format": "full_html"
+                },
+                "uuid": "1dbe2d99-b8ff-4cb0-ab03-3f22346cced9",
+                "style": {
+                    "plugin": "default",
+                    "data": {
+                        "settings": {
+                            "classes": ""
                         }
                     }
                 }
