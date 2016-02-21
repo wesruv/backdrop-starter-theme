@@ -13,20 +13,24 @@
  */
 ?>
 <div class="<?php print implode(' ', $classes); ?>">
+  <?php
+  // @todo this is a stupid way to add this div, but things that should work, aren't
+  if ($theme_hook_original == 'block__system__powered-by'): ?>
+    <div class="drop-lounging"></div>
+  <?php endif; ?>
+  <?php print render($title_prefix); ?>
+  <?php if ($title): ?>
+    <h2 class="block-title"><?php print $title; ?></h2>
+  <?php endif;?>
+  <?php print render($title_suffix); ?>
 
-<?php print render($title_prefix); ?>
-<?php if ($title): ?>
-  <h2 class="block-title"><?php print $title; ?></h2>
-<?php endif;?>
-<?php print render($title_suffix); ?>
+  <?php if ($title): ?>
+    <div class="block-content">
+  <?php endif;?>
 
-<?php if ($title): ?>
-  <div class="block-content">
-<?php endif;?>
+      <?php print render($content); ?>
 
-    <?php print render($content); ?>
-
-<?php if ($title): ?>
-  </div>
-<?php endif;?>
+  <?php if ($title): ?>
+    </div>
+  <?php endif;?>
 </div>

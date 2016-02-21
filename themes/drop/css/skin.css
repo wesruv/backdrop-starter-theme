@@ -5,7 +5,7 @@ html {
 
 body {
   margin: 0;
-  padding: 0 0 6em;
+  padding: 0 0 8em;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
@@ -19,14 +19,22 @@ a {
   color: #0074bd;
 }
 
-.l-header {
-  display: flex;
-  align-items: center;
-  background: #20252e;
-  min-height: 6.125em;
-  padding: 0 2em;
-  color: #fff;
+.l-site-width-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
 }
+
+.l-header {
+  background: #20252e;
+}
+
+  .l-header-inner-wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 6.125em;
+    padding: 0 2em;
+    color: #fff;
+  }
 
   .l-header .block {
     flex-grow: 1;
@@ -89,21 +97,20 @@ a {
  * Hero styles
  */
 .hero {
-  padding: 2em 4em 3em;
   background: #0074bd url(../images/texture.png) no-repeat center center;
   background-blend-mode: luminosity;
 }
 
   .hero-content {
-    max-width: 1100px;
-    margin: 0 auto;
+    padding: 2em 3em 3em;
   }
 
   .hero-title {
-    margin: 0;
+    margin: 0 0 0.2em;
     padding: 0;
     font-weight: 200;
     font-size: 4em;
+    line-height: 1.2;
   }
 
   .hero-checklist {
@@ -137,6 +144,7 @@ a {
   .hero-checkbox-label {
     position: relative;
     padding: 0 0 0 1.2em;
+    cursor: pointer;
   }
 
     .hero-checkbox-label:before,
@@ -150,8 +158,8 @@ a {
       top: 50%;
       left: 0;
       transform: translate(0, -50%);
-      width: 0.5em;
-      height: 0.5em;
+      width: 0.6em;
+      height: 0.6em;
       border: 2px solid #0074bd;
     }
 
@@ -168,9 +176,9 @@ a {
     }
 
       :checked + .hero-checkbox-label:after {
-        transform: translate(0.25em, 50%) translate(0, -1px) rotate(45deg);
-        width: 0.11em;
-        height: 0.3em;
+        transform: translate(0.3em, 50%) rotate(45deg);
+        width: 0.14em;
+        height: 0.35em;
         border: 2px solid #000;
         border-top: 0;
         border-left: 0;
@@ -194,7 +202,6 @@ a {
 
   .cards-inner-wrapper {
     display: flex;
-    max-width: 1100px;
     max-width: calc(1100px + 0.8em);
     margin: 0 auto;
     background: #0074bd url(../images/texture.png) no-repeat 10% center;
@@ -235,18 +242,182 @@ a {
       margin: 0;
     }
 
+.quote-primary {
+  position: relative;
+  margin: 0 0 2em;
+  padding: 2.5em 0 3em;
+}
+
+  .quote-primary:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    border-bottom: 3px solid #b2d5eb;
+  }
+
+  .quote-primary-inner-wrapper {
+    max-width: 950px;
+    padding: 0 4em;
+  }
+
+  .quote-content {
+    margin: 0 0 0.5em;
+    font-size: 2em;
+  }
+
+  .quote-citation {
+    font-size: 1.2em;
+    float: right;
+  }
+
+    .quote-citation cite {
+      display: block;
+      font-size: 1.2em;
+    }
+
+.content-teasers-wrapper {
+  display: flex;
+  padding: 0 1em;
+  list-style: none;
+}
+
+  .content-teaser-wrapper {
+    padding: 0 1.5em;
+  }
+
+  .content-teaser-headline {
+    margin: 0 0 0.7em;
+  }
+
+  .content-teaser-headline a {
+    text-decoration: none;
+  }
+
+  .content-teaser p {
+    margin: 0;
+  }
 
 .l-footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  display: flex;
   height: 3em;
   background: #20252e;
   line-height: 3em;
   color: #fff;
 }
 
+  .l-footer-inner-wrapper {
+    display: flex;
+  }
+
   .l-footer a {
     color: #fff;
   }
+
+  .l-footer .block-system-powered-by {
+    padding: 0 0 0 40px;
+  }
+
+    .l-footer .block-system-powered-by a {
+      text-decoration: none;
+    }
+
+.drop-lounging {
+  position: relative;
+  width: 165px;
+}
+
+  .drop-lounging:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    left: calc(50% + 20px);
+    display: block;
+    box-sizing: content-box;
+    width: 100%;
+    height: 0;
+    margin: 0;
+    padding: 0 0 52%;
+    transform: translate(-50%, -82%);
+    background: url('../images/drop-lounging.png') no-repeat;
+    background-size: 100% auto;
+  }
+
+/**
+ * Getting started checklist pane
+ */
+.get-started-pane-outer-wrapper {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 500;
+  transform: translate(0, -50%) translate(0, -10vh);
+  width: 400px;
+  border: 2px solid #20252e;
+  background: #fff;
+}
+
+  .get-started-pane-control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    padding: 0.6em 1.5em 0.6em 3.2em;
+    font-size: 1.125em;
+    transform: rotate(90deg) translate(-2px, 0);
+    transform-origin: left top;
+    background: #20252e;
+    color: #fff;
+  }
+
+    .get-started-pane-control:before,
+    .get-started-pane-control:after {
+      content: '';
+      position: absolute;
+      display: block;
+    }
+
+    .get-started-pane-control:before {
+      top: 0;
+      left: 0;
+      width: 2.2em;
+      height: 100%;
+      background: #0074bd;
+    }
+
+    .get-started-pane-control:after {
+      top: 50%;
+      left: 1.1em;
+      width: 0.5em;
+      height: 0.5em;
+      border: 1px solid #fff;
+      border-left: 0;
+      border-bottom: 0;
+      transform: translate(0, -50%) translate(0, -2px) rotate(45deg);
+      transform-origin: left top;
+    }
+
+    .get-started-pane-content-wrapper {
+      position: relative;
+      padding: 1em;
+      background: #20252e;
+      color: #fff;
+    }
+
+    .get-started-pane-tutorials-link {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translate(0, 100%);
+      display: block;
+      padding: 0.5em 1em;
+      background: #586172;
+      color: #fff;
+    }

@@ -21,10 +21,12 @@
             "3cf4d100-0d5a-4c0a-af00-e5f6121ccfc2"
         ],
         "top": [
+            "2cecf577-5703-401b-9300-e21e850420d4",
             "1dbe2d99-b8ff-4cb0-ab03-3f22346cced9"
         ],
         "content": [
-            "139a22e2-9fc0-46f2-af00-bbfba6664f12"
+            "139a22e2-9fc0-46f2-af00-bbfba6664f12",
+            "26f4e9ac-75c6-4ef7-ad30-482b2f1a2732"
         ],
         "footer": [
             "2ec3f907-7e4d-49e9-8c06-6ad0bae3d6eb"
@@ -110,6 +112,32 @@
                 }
             }
         },
+        "2cecf577-5703-401b-9300-e21e850420d4": {
+            "plugin": "block:get_started_checklist_pane",
+            "data": {
+                "module": "block",
+                "delta": "get_started_checklist_pane",
+                "settings": {
+                    "title_display": "default",
+                    "style": "default",
+                    "block_settings": {
+                        "delta": "get_started_checklist_pane",
+                        "reusable": true
+                    },
+                    "contexts": [],
+                    "title": ""
+                },
+                "uuid": "2cecf577-5703-401b-9300-e21e850420d4",
+                "style": {
+                    "plugin": "default",
+                    "data": {
+                        "settings": {
+                            "classes": ""
+                        }
+                    }
+                }
+            }
+        },
         "1dbe2d99-b8ff-4cb0-ab03-3f22346cced9": {
             "plugin": "layout:custom_block",
             "data": {
@@ -121,7 +149,7 @@
                     "style": "default",
                     "block_settings": [],
                     "contexts": [],
-                    "content": "<header class=\"hero homepage-hero\">\n  <div class=\"hero-content\">\n    <h1 class=\"hero-title\">Get Started Checklist</h1>\n    <ul class=\"hero-checklist\">\n      <li class=\"hero-check-wrapper\">\n        <input type=\"checkbox\" class=\"hero-checkbox\" value=\"site-colors\" id=\"hero-checkbox-site-colors\"/>\n        <label class=\"hero-checkbox-label\" for=\"hero-checkbox-site-colors\">Configure site colors</label>\n      </li>\n      <li class=\"hero-check-wrapper\">\n        <input type=\"checkbox\" class=\"hero-checkbox\" value=\"site-branding\" id=\"hero-checkbox-site-branding\"/>\n        <label class=\"hero-checkbox-label\" for=\"hero-checkbox-site-branding\">Add site branding</label>\n      </li>\n      <li class=\"hero-check-wrapper\">\n        <input type=\"checkbox\" class=\"hero-checkbox\" value=\"add-content\" id=\"hero-checkbox-add-content\" checked />\n        <label class=\"hero-checkbox-label\" for=\"hero-checkbox-add-content\">Add content</label>\n      </li>\n    </ul>\n    <a href=\"#getting-started\" class=\"hero-call-to-action button button-primary\">\n      See more\n    </a>\n  </div>\n</header>\n<section class=\"cards-wrapper\">\n  <div class=\"cards-inner-wrapper\">\n    <article class=\"card\">\n      <div class=\"card-content\">\n        <h3 class=\"card-title\">\n          <a href=\"#\" class=\"card-title-link\">Articles</a>\n        </h3>\n        <p class=\"card-description\">\n          Content title lorem ipsum dolor sit amet marble\n        </p>\n      </div>\n    </article>\n    <article class=\"card\">\n      <div class=\"card-content\">\n        <h3 class=\"card-title\">\n          <a href=\"#\" class=\"card-title-link\">About</a>\n        </h3>\n        <p class=\"card-description\">\n          Content title lorem ipsum dolor sit amet marble\n        </p>\n      </div>\n    </article>\n    <article class=\"card\">\n      <div class=\"card-content\">\n        <h3 class=\"card-title\">\n          <a href=\"#\" class=\"card-title-link\">\n            Contact\n          </a>\n        </h3>\n        <p class=\"card-description\">\n          Content title lorem ipsum dolor sit amet marble\n        </p>\n      </div>\n    </article>\n  </div>\n</section>\n",
+                    "content": "<header class=\"hero homepage-hero\">\n  <div class=\"hero-content l-site-width-wrapper\">\n    <h1 class=\"hero-title\">Get Started Checklist</h1>\n    <ul class=\"hero-checklist\">\n      <li class=\"hero-check-wrapper\">\n        <input type=\"checkbox\" class=\"hero-checkbox\" value=\"site-colors\" id=\"hero-checkbox-site-colors\"/>\n        <label class=\"hero-checkbox-label\" for=\"hero-checkbox-site-colors\">Configure site colors</label>\n      </li>\n      <li class=\"hero-check-wrapper\">\n        <input type=\"checkbox\" class=\"hero-checkbox\" value=\"site-branding\" id=\"hero-checkbox-site-branding\"/>\n        <label class=\"hero-checkbox-label\" for=\"hero-checkbox-site-branding\">Add site branding</label>\n      </li>\n      <li class=\"hero-check-wrapper\">\n        <input type=\"checkbox\" class=\"hero-checkbox\" value=\"add-content\" id=\"hero-checkbox-add-content\" checked />\n        <label class=\"hero-checkbox-label\" for=\"hero-checkbox-add-content\">Add content</label>\n      </li>\n    </ul>\n    <a href=\"#getting-started\" class=\"hero-call-to-action button button-primary\">\n      See more\n    </a>\n  </div>\n</header>\n<section class=\"cards-wrapper\">\n  <div class=\"cards-inner-wrapper l-site-width-wrapper\">\n    <article class=\"card\">\n      <div class=\"card-content\">\n        <h3 class=\"card-title\">\n          <a href=\"#\" class=\"card-title-link\">Articles</a>\n        </h3>\n        <p class=\"card-description\">\n          Content title lorem ipsum dolor sit amet marble\n        </p>\n      </div>\n    </article>\n    <article class=\"card\">\n      <div class=\"card-content\">\n        <h3 class=\"card-title\">\n          <a href=\"#\" class=\"card-title-link\">About</a>\n        </h3>\n        <p class=\"card-description\">\n          Content title lorem ipsum dolor sit amet marble\n        </p>\n      </div>\n    </article>\n    <article class=\"card\">\n      <div class=\"card-content\">\n        <h3 class=\"card-title\">\n          <a href=\"#\" class=\"card-title-link\">\n            Contact\n          </a>\n        </h3>\n        <p class=\"card-description\">\n          Content title lorem ipsum dolor sit amet marble\n        </p>\n      </div>\n    </article>\n  </div>\n</section>\n",
                     "format": "full_html"
                 },
                 "uuid": "1dbe2d99-b8ff-4cb0-ab03-3f22346cced9",
@@ -148,6 +176,31 @@
                     "contexts": []
                 },
                 "uuid": "139a22e2-9fc0-46f2-af00-bbfba6664f12",
+                "style": {
+                    "plugin": "default",
+                    "data": {
+                        "settings": {
+                            "classes": ""
+                        }
+                    }
+                }
+            }
+        },
+        "26f4e9ac-75c6-4ef7-ad30-482b2f1a2732": {
+            "plugin": "layout:custom_block",
+            "data": {
+                "module": "layout",
+                "delta": "custom_block",
+                "settings": {
+                    "title_display": "default",
+                    "title": "",
+                    "style": "default",
+                    "block_settings": [],
+                    "contexts": [],
+                    "content": "<blockquote class=\"quote quote-primary\">\n  <div class=\"l-site-width-wrapper quote-primary-inner-wrapper clearfix\">\n    <p class=\"quote-content\">“Think left and think right and think low and think high. \u0003Oh, the thinks you can think up if only you try”</p>\n    <div class=\"quote-citation\">\n      <cite>Oh, the Thinks You Can Think!</cite> by Theodor Seuss Geisel\n    </div>\n  </div>\n</blockquote>\n\n<div class=\"content-teasers-outer-wrapper\">\n  <ul class=\"l-site-width-wrapper clearfix content-teasers-wrapper\">\n    <li class=\"content-teaser-wrapper\">\n      <article class=\"content-teaser\">\n        <h4 class=\"content-teaser-headline\">\n          <a href=\"#\">Creating a new layout</a>\n        </h4>\n        <p>Vivamus eu maximus turpis, nec tincidunt est. Praesent lectus felis, consequat in libero at, luctus sollicitudin lectus. Nam at nibh eget nisl consectetur sodales et a mauris. Nam sit amet lorem laoreet diam consequat ultricies. Nulla tristique in ex in dictum. Sed imperdiet facilisis purus, eget.</p>\n      </article>\n    </li>\n    <li class=\"content-teaser-wrapper\">\n      <article class=\"content-teaser\">\n        <h4 class=\"content-teaser-headline\">\n          <a href=\"#\">Listing content dynamically with Views</a>\n        </h4>\n        <p>Nulla tristique in ex in dictum. Sed imperdiet facilisis purus, eget mollis erat cursus ut. Nam sodales, eros ut condimentum lobortis, nisl turpis fermentum enim, eget fringilla magna odio at justo. Mauris libero augue, bibendum ac leo sollicitudin, iaculis lobortis nisl. Morbi id porta justo.</p>\n      </article>\n    </li>\n    <li class=\"content-teaser-wrapper\">\n      <article class=\"content-teaser\">\n        <h4 class=\"content-teaser-headline\">\n          <a href=\"#\">Mauris libero augue, bibendum ac leo sollicitudin, iaculis lobortis.</a>\n        </h4>\n        <p>Nunc sed ipsum sit amet dui consectetur aliquam. Ut pretium, sapien tincidunt rhoncus sagittis, lorem metus dapibus est, et commodo lectus nibh vel diam. Suspendisse potenti. Donec lacinia ante sit amet eros ultrices, eget tempor quam dictum.</p>\n      </article>\n    </li>\n  </ul>\n</div>\n",
+                    "format": "full_html"
+                },
+                "uuid": "26f4e9ac-75c6-4ef7-ad30-482b2f1a2732",
                 "style": {
                     "plugin": "default",
                     "data": {
