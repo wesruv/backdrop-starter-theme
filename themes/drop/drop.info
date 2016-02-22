@@ -14,6 +14,8 @@ stylesheets[all][] = css/skin.css
 ; Remove system.theme.css
 stylesheets[all][] = system.theme.css
 
+scripts[] = js/script.js
+
 ; We need at least one setting for the theme settings page to appear in the
 ; menu. Color module provides our defaults, so we just register a dummy setting.
 settings[color] = true
