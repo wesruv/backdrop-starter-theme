@@ -101,7 +101,7 @@
                     "plugin": "dynamic",
                     "data": {
                         "settings": {
-                            "classes": "",
+                            "classes": "clearfix",
                             "wrapper_tag": "div",
                             "title_tag": "h2",
                             "title_classes": "element-invisible",

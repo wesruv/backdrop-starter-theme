@@ -69,6 +69,7 @@
         "flush caches",
         "access devel information",
         "execute php code",
-        "switch users"
+        "switch users",
+        "view style guides"
     ]
 }

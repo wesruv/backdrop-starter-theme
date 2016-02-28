@@ -100,7 +100,7 @@ ul.primary li a:hover,
 .responsive-tabs-mobile .expand-dropdown-tabs-control.js-active:before,
 .expand-dropdown-tabs-control.js-active {
   color: #000;
-  background: #c5c5c3;
+  background: #bcc2cc;
 }
 
 ul.primary li:first-child a {
@@ -150,6 +150,7 @@ ul.secondary li a {
   display: block;
   border: 2px solid #e3e2e2;
   color: #444B53;
+  text-decoration: none;
   transition:
     background-color 0.6s ease,
     color 0.6s ease;
