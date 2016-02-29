@@ -33,17 +33,17 @@
     </header>
   <?php endif; ?>
 
-  <?php if ($content['top']): ?>
-    <div class="l-top">
-      <?php print $content['top']; ?>
-    </div>
-  <?php endif; ?>
-
   <?php if ($messages): ?>
     <div class="l-site-width-wrapper clearfix">
       <div class="l-messages">
         <?php print $messages; ?>
       </div>
+    </div>
+  <?php endif; ?>
+
+  <?php if ($content['top']): ?>
+    <div class="l-top">
+      <?php print $content['top']; ?>
     </div>
   <?php endif; ?>
 
