@@ -4,17 +4,39 @@
  * Implements template_preprocess_page().
  */
 function drop_preprocess_layout(&$variables) {
-  $theme_path = backdrop_get_path('theme', 'drop');
-  $seven_theme_path = backdrop_get_path('theme', 'seven');
-
-  if (!empty($variables['tabs'])) {
-    backdrop_add_css($theme_path . '/css/admin-tabs.css');
-    backdrop_add_js($seven_theme_path . '/js/script.js');
-  }
-
   if ($variables['is_front']) {
     $variables['classes'][] = 'layout-front';
   }
+}
+
+/**
+ * Implements hook_preprocess_menu_local_tasks().
+ */
+function drop_preprocess_menu_local_tasks(&$variables) {
+  $theme_path = backdrop_get_path('theme', 'drop');
+  $seven_theme_path = backdrop_get_path('theme', 'seven');
+
+  // @todo put responsive tabs in a more central place
+  backdrop_add_js($seven_theme_path . '/js/script.js');
+  backdrop_add_css($theme_path . '/css/admin-tabs.css');
+}
+
+/**
+ * Implements hook_preprocess_fieldset().
+ */
+function drop_preprocess_fieldset(&$variables) {
+  if (isset($variables['element']['#collapsible']) && $variables['element']['#collapsible'] == true) {
+    $seven_theme_path = backdrop_get_path('theme', 'seven');
+    backdrop_add_js('core/misc/collapse.js');
+  }
+}
+
+/**
+ * Implements hook_preprocess_vertical_tabs().
+ */
+function drop_preprocess_vertical_tabs(&$variables) {
+  $theme_path = backdrop_get_path('theme', 'drop');
+  backdrop_add_css($theme_path . '/css/vertical-tabs.css');
 }
 
 /**
