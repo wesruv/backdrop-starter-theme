@@ -46,9 +46,8 @@
   margin: 0 0 0.5em;
 }
 
-.hero-call-to-action {
+.button.hero-call-to-action {
   display: inline-block;
-  padding: 0.4em 1.2em;
   background: #0074bd;
   color: #fff;
   text-decoration: none;

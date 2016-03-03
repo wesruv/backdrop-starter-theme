@@ -105,7 +105,45 @@ h6 {
   font-size: 1rem;
 }
 
-/* Table tags */
+/**
+ * Small Text Components
+ */
+.marker {
+  font-size: 0.875em;
+  display: inline-block;
+  margin: 0 0.4em;
+  padding: 0.3em 0.6em;
+  background: #abdeff;
+  text-transform: uppercase;
+  line-height: 1;
+  font-style: italic;
+}
+
+.more-help-link {
+  text-align: right;
+}
+
+.more-help-link a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.more-help-link a:before {
+  content: '?';
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0 0.4em 0 0;
+  border-radius: 50%;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  background: #0074bd;
+}
+
+/**
+ * Table tags
+ */
 caption {
   font-size: 1.6rem;
   font-weight: 400;
@@ -136,7 +174,7 @@ th:last-child {
   border-right-color: #dee2ea;
 }
 
-/* @todo override arrow on table */
+/* @todo override sort arrow on table */
 
 /**
  * Header
@@ -984,7 +1022,7 @@ ul.tips {
 
 input.form-submit,
 button.form-submit,
-a.button {
+.button {
   text-align: center;
   text-transform: uppercase;
   color: #444b53;
@@ -1001,7 +1039,7 @@ a.button {
 }
 
 [dir="rtl"] input.form-submit,
-[dir="rtl"] a.button {
+[dir="rtl"] .button {
   margin-left: 1em;
   margin-right: 0;
 }
@@ -1017,18 +1055,16 @@ a.button {
   margin-right: 0.5em;
 }
 
-a.button:hover,
+.button:hover,
 input.form-submit:hover,
-a.button:focus,
+.button:focus,
 input.form-submit:focus {
   text-decoration: none;
-  background-color: #CFDE56;
-  border-color: #CFDE56;
+  background-color: #abdeff;
+  border-color: #abdeff;
 }
 
-a.button:link,
-a.button:visited,
-a.button:active,
+.button,
 input.form-submit:active {
   /* @todo, decide on an active state */
   text-decoration: none;
@@ -1050,8 +1086,8 @@ input.form-button-disabled:active {
 input.button-primary,
 button.button-primary {
   color: white;
-  border-color: #1766ae;
-  background-color: #1766ae;
+  border-color: #0074bd;
+  background-color: #0074bd;
 }
 
 input.button-primary:hover,
@@ -1322,4 +1358,209 @@ fieldset .fieldset-wrapper {
 /* Collapsed state styles */
 .js fieldset.collapsed {
   padding: 1.6em 0;
+}
+
+/**
+ * Pager
+ */
+ul.pager {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.pager-item,
+.pager-ellipsis {
+  display: none;
+}
+
+@media (min-width: 550px) {
+  .pager-item,
+  .pager-ellipsis {
+    display: block;
+  }
+}
+
+.pager-first,
+.pager-previous,
+.pager-ellipsis,
+.pager-current,
+.pager-next,
+.pager-last,
+.pager-item {
+  padding: 0.6em 1em;
+  margin: 0;
+  background: #586172;
+  color: #fff;
+}
+
+.pager-ellipsis {
+  color: #586172;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.pager-first a,
+.pager-previous a,
+.pager-next a,
+.pager-last a,
+.pager-item a {
+  margin: -0.6em -1em;
+  padding: 0.6em 1em;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  will-change: background-color;
+}
+
+.pager-first a:hover,
+.pager-previous a:hover,
+.pager-next a:hover,
+.pager-last a:hover,
+.pager-item a:hover {
+  background: #3c4350;
+}
+
+.pager-current {
+  background: #20252e;
+}
+
+/**
+ * Progress Bar
+ * See system module
+ */
+.progress {
+  font-weight: bold;
+}
+.progress .bar {
+  margin: 0 0.2em .5em 0;
+  border: 2px solid #e5e5e6;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #e5e5e6;
+}
+.progress .filled {
+  position: relative;
+  overflow: hidden;
+  background: #586172;
+  -webkit-transition: width .4s;
+  transition: width .4s;
+  will-change: width;
+}
+/* Progress Bar Animation */
+.progress .filled:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15%;
+  height: 100%;
+  transform: skewX(-20deg);
+  background-color: #3c4350;
+  -webkit-animation: progressGradient 3s infinite;
+  animation: progressGradient 1.5s infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transition: width .4s;
+  transition: width .4s;
+  will-change: left, width;
+}
+
+@-webkit-keyframes progressGradient {
+  0% {
+    left: -15%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes progressGradient {
+  0% {
+    left: -15%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/**
+ * Dropbutton overrides
+ */
+/* @todo COMPLETELY GUT core/misc/ui/jquery.ui.dialog.css */
+.dropbutton li {
+  margin: 0;
+}
+
+.ui-widget {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.ui-dialog {
+  border: 0.125em solid #20252e;
+  backface-visibility: hidden;
+}
+
+.ui-corner-all {
+  border-radius: 0;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  background: #20252e;
+  color: #fff;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  top: 0;
+  top: calc(-0.125em);
+  right: 0;
+  right: calc(-0.125em);
+  width: 2.5em;
+  height: 100%;
+  height: calc(100% + 0.125em);
+  margin: 0;
+  outline: none;
+  background: #008be2;
+}
+
+.ui-dialog .ui-dialog-titlebar-close .ui-icon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1em;
+  height: 1em;
+  margin: 0;
+  background: transparent;
+}
+
+.ui-dialog .ui-dialog-titlebar-close .ui-icon:before,
+.ui-dialog .ui-dialog-titlebar-close .ui-icon:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 0.125em;
+  height: 0.875em;
+  background: #fff;
+}
+
+.ui-dialog .ui-dialog-titlebar-close .ui-icon:before {
+  transform: translate(0.5em, 0.125em) rotate(45deg);
+}
+
+.ui-dialog .ui-dialog-titlebar-close .ui-icon:after {
+  transform: translate(0.4375em, 0.125em) rotate(-45deg);
+}
+
+.ui-button-icon-only .ui-button-text,
+.ui-button-icons-only .ui-button-text {
+  padding: 0;
 }
